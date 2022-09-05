@@ -9,7 +9,7 @@ const config = {
   title: 'Attorney Online',
   tagline: 'An off-the-cuff courtroom drama simulator.',
   url: 'https://attorneyonline.github.io',
-  baseUrl: '/',
+  baseUrl: '/AODocs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
