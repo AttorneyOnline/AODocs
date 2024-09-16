@@ -36,14 +36,14 @@ FantaCrypt is only used in messages sent by the client to the server, as well.
 
 The handshake is largely the same regardless of server and client version.  
   
-C: (ordinary TCP handshake)  
+```C: (ordinary TCP handshake)  
 S: **decryptor#{<decryptor: hex>}#%** (the argument is decrypted using **unsigned integer** 322 as decryption key)  
 (all headers from the client are encrypted from here on)*  
 C: **HI#<unique_hardware_id: string>#%**  
 S: **ID#<player_id: int>#<software: string>[#<version: int.int.int>]#%** (player id is largely unused)  
-[C: **ID#<software: string>#<version: int.int.int>#%**]  
+C: **ID#<software: string>#<version: int.int.int>#%**
 S: **PN#<player_count :int>#<max_players: int>#%**  
-[S: **FL#<feature1: string>#...#<featureN: string>#%**]  
+S: **FL#<feature1: string>#...#<featureN: string>#%**```
   
 *: not always true, if the server sends noencryption as an argument in the FL packet, headers are no longer encrypted(2.3.1+ only)  
 
@@ -114,7 +114,7 @@ For the most part, communication between clients happens this way. There are chi
 IC messages, (abbreviation for "In-character") are the kind of messages sent with a character, an animation and many other modifiers. There is a total of 14 arguments, which makes the packet a bit complex. To make this a bit more manageable, there is a redundant newline for every argument. These are not present in the actual packet.
 
 C:
-**MS#  
+```MS#  
 chat/0/1# (0 = no desk, 1 = desk)  
 <pre_emote: string>#  
 <character: string>#  
@@ -133,10 +133,10 @@ chat/0/1# (0 = no desk, 1 = desk)
 [<showname: string>]#  
 [<other_charid: int>]#  
 [<self_offset: int>]#  
-[<noninterrupting_preanim: int>]#%**  
+[<noninterrupting_preanim: int>]#%```
 
 S: 
-**MS#  
+```MS#  
 chat/0/1# (0 = no desk, 1 = desk)  
 <pre_emote: string>#  
 <character: string>#  
@@ -159,7 +159,7 @@ chat/0/1# (0 = no desk, 1 = desk)
 [<self_offset: int>]#  
 [<other_offset: int>]#  
 [<other_flip: int>]#  
-[<noninterrupting_preanim: int>]#%**  
+[<noninterrupting_preanim: int>]#%```
 
 The following features have been added in 2.6 when the Case Café Custom Client features had been merged:
 

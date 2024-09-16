@@ -7,11 +7,11 @@ Section Names = Classes
 Bullets = Objects
 
  - Example of targeting a ***class***:
-   * QPushButton {	color: Blue;	background-color: rgba(255, 216, 0, 170);}
+   * ```QPushButton {	color: Blue;	background-color: rgba(255, 216, 0, 170);}```
  - Example of targeting an ***object***:
-   * *#ui_reload_theme {border: 1px solid white; background-color: rgba(0, 0, 0, 0);}
+   * ```#ui_reload_theme {border: 1px solid white; background-color: rgba(0, 0, 0, 0);}```
       * OR
-   * QPushButton#ui_reload_theme {border: 1px solid white; background-color: rgba(0, 0, 0, 0);}
+   * ```QPushButton#ui_reload_theme {border: 1px solid white; background-color: rgba(0, 0, 0, 0);}```
 
 Try putting these examples into your courtroom_stylesheets.css, and watch what happens!
 

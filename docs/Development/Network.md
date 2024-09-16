@@ -340,8 +340,8 @@ Reference of fields:
 - **other_emote**: The emote the user's pair was doing. Note that by default, zooms (that are correctly defined as such) do not update this value, so a pair of zooms will not appear. Zooms also enjoy special privileges, in that (assuming they are correctly defined, again) they make the pair disappear in the client and get centered.
 
 - **self_offset**: the percentage by which the character is shifted horizontally, from `-100` (one whole screen's worth to the left) to `100` (one whole screen's worth to the right). This parameter also stores vertical offset, which is self-explanatory.
-  * `{x_offset}`: <2.9
-  * `{x_offset}&{y_offset}`: 2.9+
+  * `{x_offset}: <2.9`
+  * `{x_offset}&{y_offset}: 2.9+`
 
 - **other_offset**: The user's pair's `self_offset`, basically.
 
