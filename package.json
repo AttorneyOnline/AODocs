@@ -1,6 +1,7 @@
 {
   "name": "aodocs",
   "version": "0.0.0",
+  "packageManager": "yarn@1.22.22",
   "private": true,
   "scripts": {
     "build:clean": "rm -rf dist build .docusaurus node_modules",
