@@ -1,6 +1,7 @@
 {
   "name": "aodocs",
   "version": "0.0.0",
+  "packageManager": "yarn@1.22.22",
   "private": true,
   "scripts": {
     "build:clean": "rm -rf dist build .docusaurus node_modules",
@@ -17,15 +18,15 @@
   "dependencies": {
     "@algolia/ui-library": "4.0.0-beta.71",
     "@docsearch/react": "3.6.1",
-    "@docusaurus/core": "2.4.1",
-    "@docusaurus/preset-classic": "2.4.1",
-    "@mdx-js/react": "^1.6.22",
+    "@docusaurus/core": "^3.5.2",
+    "@docusaurus/preset-classic": "^3.5.2",
+    "@mdx-js/react": "^3.0.1",
     "clsx": "^1.1.1",
     "file-loader": "6.2.0",
     "postcss": "8.4.25",
     "postcss-import": "15.0.0",
     "postcss-preset-env": "7.8.2",
-    "prism-react-renderer": "1.2.1",
+    "prism-react-renderer": "^2.4.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "url-loader": "4.1.1"
