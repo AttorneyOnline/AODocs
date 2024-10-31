@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@algolia/ui-library": "9.16.1",
-    "@docsearch/react": "3.6.2",
+    "@docsearch/react": "3.6.3",
     "@docusaurus/core": "^3.5.2",
     "@docusaurus/preset-classic": "^3.5.2",
     "@mdx-js/react": "^3.0.1",
